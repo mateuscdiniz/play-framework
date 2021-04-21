@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    background: gray;
+
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+     align-items: center;
+}
+
+
+a {
+    font-size: 20px;
+    padding: 1rem;
+    display: flex;
+       justify-content: center;
+        flex-direction: center;
+         align-items: center;
+}
