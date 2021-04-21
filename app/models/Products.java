@@ -37,7 +37,7 @@ public class Products extends Model {
     static {
         products = new HashSet<>();
         products.add(new Products(1, "Lake House", 200.000, "Lake house" ));
-        products.add(new Products(2, "Apartament", 100.000, "Lake Apartament" ));
+        products.add(new Products(2, "Apartament", 100.000, "Apartament" ));
         products.add(new Products(3, "Flat", 300.000, "Flat" ));
     }
 

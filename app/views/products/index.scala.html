@@ -10,9 +10,7 @@
 <h3>PRODUCTS</h3>
 
 @for(product <- products) {
-<a href="#">@product.name</a>
-<p>Price: @product.price</p>
-<p>Description: @product.description</p>
+<a href="@routes.ProductsController.show(product.id)">@product.name</a>
 <br/>
 <br/>
 
