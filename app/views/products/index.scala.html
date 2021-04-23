@@ -1,23 +1,32 @@
 @(products : Set[Products])
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Products</title>
-</head>
-<body>
+@main("Welcome to Negocialle") {
+  
+    <nav class="nav">
+      <a class="nav-link" href="/">NEGOCIALLE!</a>
+      <a class="nav-link" href="/aboutus">ABOUT US</a>
+      <a class="nav-link" href="/contact">CONTACT</a>
+      <a class="nav-link" href="/products">PRODUCTS</a>
+    </nav>
 
-<h3>PRODUCTS</h3>
+    <div class="products">
+        <h1>PRODUCTS</h1>
+    </div>
 
-@for(product <- products) {
-<a href="@routes.ProductsController.show(product.id)">@product.name</a>
-<br/>
-<br/>
+      <div class="products-info">
+        @for(product <- products) {
+        <h2>@product.name</h2>
+        <a href="@routes.ProductsController.show(product.id)">More informations</a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
+        }
+      
+    </div>
+
+  <footer>NEGOCIALLE IMÓVEIS - ALL RESERVED RIGHTS!</footer>
+  
+ 
 }
-
-
-
-
-</body>
-</html>
